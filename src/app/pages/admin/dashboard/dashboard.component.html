@@ -1,0 +1,24 @@
+<h1>Dashboard</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; index as i">
+            <td>{{ i + 1}}</td>
+            <td>{{ product.name}}</td>
+            <td>{{ product.price}}</td>
+            <td><img [src]="product.image" alt=""></td>
+            <td>
+                <button class="btn btn-light mx-3" (click)="removeItem(product.id!)">Remove</button>
+                <button class="btn btn-success" routerLink="/admin/products/{{product.id}}/edit">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "San pham 1",
+      "price": 100,
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "San pham moi",
+      "price": "1999",
+      "image": "",
+      "id": 2
+    },
+    {
+      "name": "San pham 5",
+      "price": "1000",
+      "image": "",
+      "id": 3
+    }
+  ]
+}
